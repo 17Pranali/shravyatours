@@ -17,4 +17,4 @@ It allows users to explore popular destinations, search easily with a search bar
 - **Hosting:** GitHub Pages
 
 ## Live Demo
-👉 [Click here to view website](https://your-username.github.io/shravyatours/)
+👉 [Click here to view website](https://17pranali.github.io/shravyatours/)
