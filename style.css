@@ -1,0 +1,842 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.navbar-brand img {
+  height: 45px;
+  width: auto;
+  margin-right: 8px;
+}
+.navbar-brand {
+  font-weight: bold;
+  color: #fff !important;
+}
+.navbar {
+  background-color: #f93b3b !important; /* Maroon red */
+}
+
+.navbar {
+  padding: 1rem 2rem;
+  background: rgba(0, 0, 0, 0.7);
+}
+/* Navbar custom */
+.navbar-nav .nav-link {
+  font-weight: 500;
+  
+  color: #fff !important;
+  margin: 0 5px;
+  transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #FFD700 !important; /* golden highlight */
+
+}
+.navbar-toggler {
+  border: none;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+/* Bright color for hamburger icon */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+/* Brand Text Styling */
+.brand-text {
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #FFD700; /* golden yellow, matches logo */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Hover effect for brand name */
+.brand-text:hover {
+  color: #fff; /* white on hover for contrast */
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+  transition: 0.3s;
+}
+
+
+
+
+/* Hero Section */
+.hero {
+    background: url("../images/place2.jpeg") no-repeat center center;
+    background-size: contain;  /* Fits the whole image inside */
+    background-color: black;   /* Fills empty space (you can change color) */
+    height: 50vh;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Push content to bottom */
+    align-items: center;
+    padding-bottom: 10px; /* Space from bottom */
+}
+
+
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin: 0;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.hero .btn {
+  padding: 12px 25px;
+  font-size: 1rem;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.hero .btn-primary {
+  background: #f8c146;
+  border: none;
+  color: black;
+}
+
+.hero .btn-primary:hover {
+  background: #e0a800;
+  transform: scale(1.05);
+}
+
+.hero .btn-outline-light:hover {
+  background: white;
+  color: black;
+}
+
+/* Hero Carousel Caption at Bottom */
+.carousel-caption {
+  bottom: 30px; /* space from bottom */
+  top: auto; /* remove vertical centering */
+  transform: none; /* reset Bootstrap centering */
+}
+
+.carousel-caption h1,
+.carousel-caption h5 {
+  color: #fff; /* make sure text is visible */
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7); /* readability on images */
+}
+
+/* Adjust font size for mobile */
+@media (max-width: 768px) {
+  .carousel-caption h1 {
+    font-size: 1.5rem;
+  }
+  .carousel-caption h5 {
+    font-size: 1rem;
+  }
+}
+
+
+/* Section Titles */
+section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* About Us Section */
+#about {
+  padding: 60px 20px;
+  background: #f8f9fa;
+  text-align: center;
+}
+
+#about p {
+  max-width: 800px;
+  margin: auto;
+  color: #555;
+}
+
+/* Services Section */
+#services {
+  padding: 60px 20px;
+}
+
+#services .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  border-radius: 15px;
+}
+
+#services .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Gallery Section */
+#gallery {
+  padding: 60px 20px;
+  background: #f8f9fa;
+}
+
+#gallery img {
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+#gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Reviews Section */
+#reviews {
+  padding: 60px 20px;
+}
+
+#reviews .carousel-item {
+  text-align: center;
+}
+
+#reviews .carousel-item img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 20px auto;
+  object-fit: cover;
+  border: 3px solid #f8c146;
+}
+
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 300px;   /* smaller height for mobile */
+    }
+}
+
+
+#reviews p {
+  font-style: italic;
+  color: #555;
+}
+
+/* Contact Section */
+#contact {
+  padding: 60px 20px;
+  background: #f8f9fa;
+}
+
+#contact .form-control {
+  border-radius: 10px;
+  padding: 12px;
+}
+
+#contact button {
+  background: #f8c146;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 25px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+#contact button:hover {
+  background: #e0a800;
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .navbar {
+    padding: 0.8rem 1.2rem;
+  }
+
+  #services .card {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero {
+    height: 80vh;
+    padding: 20px;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 0.9rem;
+  }
+
+  .hero .btn {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+}
+/* About Section */
+.about {
+  display: flex;
+  flex-direction: row; /* Desktop default: text left, image right */
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 10%;
+  background-color: #f9f9f9;
+  gap: 40px;
+}
+
+/* Left text */
+.about-text {
+  flex: 1;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+}
+
+.about-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.about-text p {
+  margin-bottom: 15px;
+}
+
+.contact {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #555;
+}
+
+.contact p {
+  margin: 5px 0;
+}
+
+/* About us  */
+
+.about-us {
+  padding: 60px 20px;
+  background: #f8f9fa;
+}
+
+/* Section Heading */
+.section-heading h2 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #222;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.section-heading h2::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #e63946; /* red underline */
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.section-heading .subtitle {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: auto;
+  gap: 30px;
+}
+
+.about-text {
+  flex: 1;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.about-text p {
+  margin-bottom: 15px;
+}
+
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* ✅ Mobile Responsive */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text {
+    order: 1;
+  }
+
+  .about-image {
+    order: 2;
+    margin-top: 20px;
+  }
+}
+
+/* Services Section */
+.services-section {
+  background: #f9f9ff;
+  padding: 60px 0;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #222;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #e63946; /* red accent */
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.section-subtitle {
+  color: #555;
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+/* Service Cards */
+.service-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 25px 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.service-card img {
+  max-width: 80px;
+  transition: transform 0.3s;
+}
+
+.service-card h3 {
+  font-size: 1.25rem;
+  margin-top: 10px;
+  font-weight: 700;
+  color: #d90429; /* brand red */
+}
+
+.service-card p {
+  font-size: 0.95rem;
+  color: #666;
+  margin-top: 8px;
+  line-height: 1.5;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.service-card:hover img {
+  transform: scale(1.1);
+}
+
+
+/* Stats Section */
+.stats-section {
+  padding: 4rem 1rem;
+  text-align: center;
+  background: #fff;
+}
+
+.stats-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5rem; /* spacing between items */
+}
+
+.stat-box {
+  transition: transform 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  transition: transform 0.3s ease;
+}
+
+.stat-label {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #b91c1c; /* red */
+  transition: color 0.3s ease;
+}
+
+.stat-box:hover .stat-number {
+  transform: scale(1.1);
+}
+
+.stat-box:hover .stat-label {
+  color: #374151; /* grey on hover */
+}
+
+/* Responsive (mobile view) */
+@media (max-width: 768px) {
+  .stats-container {
+    gap: 2rem;
+  }
+  .stat-number {
+    font-size: 2rem;
+  }
+  .stat-label {
+    font-size: 1.2rem;
+  }
+}
+
+/* Reviews Section */
+.reviews-section {
+  padding: 4rem 1rem;
+  background: #fdf2f8; /* light pink */
+  margin-top: 3rem;
+}
+
+.reviews-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.reviews-heading {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.reviews-heading h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #111;
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.reviews-heading p {
+  font-size: 1.1rem;
+  color: #4b5563;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Grid Layout */
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Review Card */
+.review-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-card h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #b91c1c; /* dark red */
+}
+
+.review-card p {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+.review-card .stars {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  color: #f59e0b; /* yellow */
+}
+
+/* Hover Effect */
+.review-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+
+/* Key Reviews Section */
+.key-reviews-section {
+  padding: 4rem 1rem;
+  background: #fdf2f8; /* light pink */
+  margin-top: 3rem;
+}
+
+.key-reviews-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Heading */
+.reviews-heading {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.reviews-heading h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #111;
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.reviews-heading p {
+  font-size: 1.1rem;
+  color: #4b5563;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Grid Layout */
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+/* Review Card */
+.review-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-card h3 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #b91c1c; /* dark red */
+}
+
+.review-card p {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+.review-card .stars {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  color: #f59e0b; /* yellow */
+}
+
+/* Hover Effect */
+.review-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+/* Sidebar Container */
+.social-sidebar {
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 1000;
+}
+
+/* Common Button Styles */
+.social-sidebar a {
+  display: block;
+  width: 45px;
+  height: 45px;
+  background-color: #e3342f; /* red */
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  line-height: 45px;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect */
+.social-sidebar a:hover {
+  background-color: #cc1f1a;
+  transform: scale(1.1);
+}
+
+/* Specific Colors (Optional) */
+.facebook { background-color: #1877f2; }
+.facebook:hover { background-color: #0d5ddb; }
+
+.instagram { background-color: #e4405f; }
+.instagram:hover { background-color: #c72f4a; }
+
+.whatsapp { background-color: #25D366; }
+.whatsapp:hover { background-color: #1ebe5a; }
+
+/* =========================
+   Booking Section Styles
+   ========================= */
+#booking {
+  background: #fdf2f2; /* soft light pink */
+  padding: 60px 20px;
+  margin: 40px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+}
+
+#booking .section-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #e63946; /* red accent */
+  margin-bottom: 10px;
+}
+
+#booking .section-subtitle {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+#booking form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#booking label {
+  font-weight: 600;
+  color: #333;
+}
+
+#booking input,
+#booking textarea {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border 0.3s ease;
+}
+
+#booking input:focus,
+#booking textarea:focus {
+  border-color: #e63946;
+  outline: none;
+}
+
+#booking button {
+  padding: 14px;
+  background: #e63946;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#booking button:hover {
+  background: #c92435;
+}
+
+/* =========================
+   Map Section Styles
+   ========================= */
+.map-section {
+  background: #e8f4f8; /* light blue */
+  padding: 60px 20px;
+  margin: 50px 0;
+  border-radius: 12px;
+}
+
+.map-section h3 {
+  font-size: 2.5rem;
+  color: #222;
+  margin-bottom: 25px;
+}
+
+.map-section iframe {
+  border-radius: 12px;
+  width: 100%;
+  height: 450px;
+}
+
+
